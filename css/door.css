@@ -6,7 +6,6 @@
     overflow: hidden;
     z-index:100;
     position:absolute;
-    /* display:none; */
 }
 .intro{
     width:100%;

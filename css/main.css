@@ -31,9 +31,6 @@
     width:1660px !important;
     margin:0 0 0 258px !important;
 }
-/* .mySwiper2{
-    cursor: grabbing;
-} */
 
 /* ===== [ 스와이프 문구 ] ===== */
 .try{
@@ -126,12 +123,10 @@
     top:50%;
     left:50%;
     animation:goTop 3s 13s both;
-    /* animation:goTop 3s both; */
 }
 @keyframes goTop{
     0%{transform:translate(-50%, -50%);}
     30%{opacity:1}
-    /* 100%{transform: translate(-50%, -385%);} */
     100%{transform: translate(-50%, -400%); opacity:0}
 }
 
@@ -143,7 +138,6 @@
     transform:translate(-50%, -45%);
     opacity: 0;
     animation:imgShow 1.5s 15.5s both;
-    /* animation:imgShow 2s 1s both; */
     text-align: left;
     display:flex;
     justify-content: space-evenly;
@@ -416,7 +410,6 @@
     position:absolute;
     top:4.5%;
     left:3.5%;
-    /* cursor: pointer; */
     cursor:n-resize;
 }
 .pc-hover-box{
@@ -455,7 +448,6 @@
     position: absolute;
     top:37px;
     left:5.3px;
-    /* cursor: pointer; */
     cursor:n-resize;
 }
 .mobile-hover-box{
@@ -620,6 +612,25 @@
 }
 .contact-wrap>div>p{
     font-size:20px;
+}
+.kakaobox>p{
+    position:relative;
+}
+.kakaobox>p:after{
+    content: '';
+    width: 322px;
+    display: block;
+    border-bottom: 2px solid #333;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    left: 115px;
+}
+.kakaobox>p:hover{
+    cursor: pointer;
+}
+.kakaobox>p:hover:after{
+    transform:scaleX(1);
 }
 .gitbox>p {
     position: relative;
